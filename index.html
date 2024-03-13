@@ -27,18 +27,18 @@
         <h2>How do we measure "better"?</h2>
         <p>We want 
           to create a smoother, more likable user experience, so we are trying to find the version that performs "better" in terms of user satisfaction and engagement. 
-          I choose key metrics to observe and test to evaluate which version was "better."
+          I choose key metrics to observe and test to evaluate which version was "better" for the task of booking an appointment. 
         </p>
         <h3>Metrics</h3>
           <ul>
             <li>
-              <span class="color">Time on Page </span>- Time spent on page to complete the task. 
+              <span class="color">Time on Page </span>: Time spent on page to complete the task. 
             </li>
             <li>
-              <span class="color">Number of Clicks </span>- Number of clicks on the page. 
+              <span class="color">Number of Clicks </span>: Number of clicks on the page. 
             </li>
             <li>
-              <span class="color">If Misclicked </span>- A boolean value representing if a user clicked a button not relevant to the task. 
+              <span class="color">If Misclicked </span>: A boolean value representing if a user clicked a button not relevant to the task. 
             </li>
           </ul>
 
@@ -71,7 +71,18 @@
   
 
         <h2>Statistical Analysis</h2>
-        <h3>Time on Page: One Tailed T-Test</h3>
+        <p>
+          All participants were asked to schedule an appointment with Adam Ng, MD at Morristown Medical Center on April 23, 2024 as their task.
+        </p>
+        <h3>Time on Page One Tailed T-Test</h3>
+        <div class="stat-test">
+        <p>Time on page is a continous variable (meaning the time spent can extend until infinity), so I knew to use a T-test. 
+          I chose to test this metric using a one-tailed T-test, because I wanted to see if version B optimized the time it took to complete the task on the webpage. I hoped
+          that version B would make it easier for users to book an appointment, so time spent on version B would be less than time spent on version A.
+        </p>
+        <p style="display: inline;"><span class="color">Null Hypothesis</span>: There is no difference in the time it takes to complete the task for Version A and Version B or Version A takes less time. </p>
+        <p><span class="color">Alternative Hypothesis</span>: Version B takes less time to complete the task.</p>
+      </div>
 
         <br />
         <br />

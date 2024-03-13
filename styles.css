@@ -55,6 +55,16 @@ p {
     text-align: center; /* Center align text */
     font-size: 1.2rem;
 }
+.stat-test {
+    width: 60vw;
+}
+.stat-test p {
+    display: flex;
+    margin-bottom: 1rem;
+    width: 60vw;
+    align-items: flex-start;
+    font-size: 1.2rem;
+}
 ul {
     display: flex;
     list-style-type: disc; /* Set the list style to disc, which creates bulleted lists */
@@ -62,7 +72,6 @@ ul {
     padding-left: 1.5rem; 
     width: 60vw;
     font-size: 1.2rem;
-    align-items: center;
     flex-direction: column;
 }
 a {
