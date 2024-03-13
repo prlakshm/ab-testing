@@ -59,7 +59,7 @@ p {
     width: 60vw;
 }
 .stat-test p {
-    display: flex;
+    display: inline-flexbox;
     margin-bottom: 1rem;
     width: 60vw;
     align-items: flex-start;
