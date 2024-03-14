@@ -22,15 +22,14 @@
         <p>
           The objective of the A/B testing project was to experiment with
           different versions of a website and use A/B testing to find out which
-          version is "better."
+          version was "better."
         </p>
 
         <h2>How do we measure "better"?</h2>
         <p>
           We want to create a smoother, more likable user experience, so we are
           trying to find the version that performs "better" in terms of user
-          satisfaction and engagement. I choose key metrics to observe and test
-          to evaluate which version was "better" for the task of booking an
+          satisfaction and engagement. I chose key metrics to test which version was "better" for the task of booking an
           appointment.
         </p>
         <h3>Metrics</h3>
@@ -44,7 +43,7 @@
             the page.
           </li>
           <li>
-            <span class="color">If Misclicked </span>: A boolean value
+            <span class="color">If Misclicked </span>: A boolean 
             representing if a user clicked a button not relevant to the task.
           </li>
         </ul>
@@ -66,10 +65,10 @@
         </div>
         <p>
           The original version of the webpage has some usability issues: the
-          <span class="color">light blue buttons are hard to see</span> and the
+          <span class="color">light blue buttons were hard to see</span> and the
           <span class="color"
-            >appointment rows are not ordered chronologically</span
-          >. Both these issues can make it difficult for the user to book and
+            >appointment rows were not ordered chronologically</span
+          >. Both these issues could make it difficult for the user to book an
           appointment.
         </p>
 
@@ -180,10 +179,10 @@
       <h3>If Misclicked Chi-Square Test</h3>
         <div class="stat-test">
           <p>
-            Number of clicks is a continous variable (the number of times a user clicks on the webpage can 
-            extend until infinity), so I knew to use a T-test. I used a one-tailed T-test, because I wanted to see if
-            version B optimized the number of clicks it took to complete the task. I hoped that version B would make it easier for users to
-            book an appointment, so there would be fewer clicks on version B than on version A. For both versions, there required 2 correct clicks to complete the task.
+            If misclicked is a categorical variable meaning each group can have 2 categories, TRUE or FALSE for if the user misclicked. 
+            We are tring to see if the frequency between the two versions (our groups) is different across each category, so we use a chi-square test. 
+            I wanted to see if there would be a difference on if the user
+            misclicked in version A and version B. I hoped version B led to less misclicks. 
           </p>
           <p>
             <span class="color">Null Hypothesis</span>: There is no difference
@@ -197,20 +196,14 @@
           alt="Data and Statistical Variables from Time on Page T-Test"
         />
         <p>
-          <span class="color">Conclusion</span>: The p-value for this test was 0.01, which is
-          less than the alpha. So, we accept the alternative hypothesis. The t-score is negative, so there was a significant decrease
-          in the number of clicks on the webpage from version A to version B.
-          We can be 95% confident that it takes users less clicks on version B to
-          book an appointment than on version A.
+          <span class="color">Conclusion</span>: The p-value for this test was 0.04, which is still
+          less than the alpha. We can accept the alternative hypothesis. 
+          This means we are 95% confident that there is a difference on if the user misclicks across version and version B.
         </p>
         <p>
-          <span class="color">Summary Statistics</span>: The average clicks it
-          took to complete the task in version A was 5, but in
-          version B it was 2.5 clicks. The task only takes 2 clicks to complete, so version A led
-          to more misclicks. We can conclude that version B makes it more straightforward to book an appointment
-          and that version A can be misleading. Version A also has a variance of 28.9, whereas version B has a variance of
-          0.2. This means there is more change in the number of clicks used in version A than B. So, users are more
-          certain in version B on where to click when booking an appointment.
+          <span class="color">Summary Statistics</span>: We can look closer at the table values to find the direction
+          of this difference. In version A there were 6 misclicks, but only 1 in version B. This means that version B led to 
+          users being more confident in where to click to book an apointment. So, version B is more user-friendly. 
         </p>
       </div>
 
@@ -222,7 +215,8 @@
       </p>
       <p>
         It's also important to note that there were only 22 participlants in the testing process, where each test had 22 data points 
-        for version A and 21 data points for version B. All participants were college students. Though this testing process helped understand
+        for version A and 21 data points for version B. All participants were college students, so they were all familiar with technology. 
+        Though this testing process helped understand
         the significance of A/B testing, if we were testing a real webpage, we would need to test according to that website's 
         demographic and traffic rate.
       </p>
